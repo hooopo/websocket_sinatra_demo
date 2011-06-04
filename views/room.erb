@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>websocket demo</title>
+        <style>
+            .error {
+                color: red; }
+            </style>
+            <script src='http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js'></script>
+            <script type='text/javascript'>
+                //<![CDATA[
+                var room = '<%= @room %>';
+                //]]>
+            </script>
+            <script src='/scripts/application.js'></script>
+        </head>
+        <body onunload='close_connection();'>
+            <h2>
+                <a href="/sign_out">logout</a>
+            </h2>
+            <p>Enter something in the text field below.</p>
+            <form id='the-form'>
+            <input id='the-input' type='text' />
+            <input id='submit' type='submit' />
+        </form>
+        <div id='messages'></div>
+    </body>
+</html> 
