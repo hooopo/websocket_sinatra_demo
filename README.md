@@ -1,8 +1,9 @@
-#Requeirements
-gem install oa-oauth dm-core dm-sqlite-adapter dm-migrations sinatra erb
-gem install eventmachine em-websocket json
+##Requeirements
 
-#Usage
+     gem install oa-oauth dm-core dm-sqlite-adapter dm-migrations sinatra erb
+     gem install eventmachine em-websocket json
+
+##Usage
 To start it up, fire up the Sinatra app:
 
     cd websocket-demo
